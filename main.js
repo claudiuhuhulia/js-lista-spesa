@@ -4,16 +4,31 @@ const shop = ['pane','pasta','melanzane','latte','pollo','riso'];
 const shoplist = document.getElementById('spesa');
 
 
-let ElementList = '<ul>';
+/* let ListItem = '<ul>';
 
 
 for(i=0 ; i < shop.length; i++){
 
-    
-    ElementList += `<li> ${shop[i]} </li>`
+    ListItem += `<li> ${shop[i]} </li>`
 
 }
 
-ElementList += '</ul>';
+ListItem += '</ul>'; */
 
-shoplist.innerHTML= ElementList;
+
+let ListItem = '<ul>';
+
+i = 0;
+
+
+while( i < shop.length ){
+
+    ListItem += `<li> ${shop[i]} </li>`
+
+    i++;
+}
+
+ListItem += '</ul>';
+
+
+shoplist.innerHTML= ListItem;
